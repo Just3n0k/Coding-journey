@@ -1,0 +1,10 @@
+Pens
+Pencils
+Notebooks
+Stapler
+Paper clips
+Highlighters
+Whiteboard
+Scissors
+Tape
+Envelopes

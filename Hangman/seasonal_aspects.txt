@@ -1,0 +1,10 @@
+Temperature
+Precipitation
+Daylight
+Floraandfauna
+Agriculture
+Tourism
+Fashion
+Sports
+Holidays
+Festivals

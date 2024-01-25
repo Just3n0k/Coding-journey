@@ -1,0 +1,10 @@
+Algorithm
+Binary
+Compiler
+Encryption
+Firewall
+Graph
+Kernel
+Machine learning
+Object oriented programming
+Virtual machine
