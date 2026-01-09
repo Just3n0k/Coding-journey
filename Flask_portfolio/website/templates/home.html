@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HOME SECTION -->
+<section id="home" class="section hero">
+    <div class="hero-content">
+        <h1>Enok Kassanda</h1>
+        <p class="subtitle">Software Developer</p>
+        <p class="lead">I build clean, efficient solutions with Python and Flask.</p>
+        <a href="#projects" class="btn-primary">View Projects</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      I am an aspiring software developer with a strong interest in backend development and information technology. I completed my NQF Level 4 (Matric) qualification at Curro Foreshore in Cape Town in 2025, where I studied Information Technology, Computer Applications Technology, and Mathematics.
+
+      I have over two and a half years of experience working with Python and nearly two years of experience using Delphi. My work primarily focuses on backend development, with additional exposure to frontend technologies. I have experience working with databases, building APIs using FastAPI, and extracting data through web scraping.
+
+      I enjoy solving problems through code and have worked on projects ranging from web scraping applications and statistical algorithms to game development using Python. I am fluent in English and have a working knowledge of Afrikaans, and I am always eager to continue learning and improving my skills as a developer.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+        {% for project in projects %}
+        <div class="project-card">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <span>{{ project.tech_stack }}</span>
+            {% if project.github_url %}
+            <a href="{{ project.github_url }}" target="_blank"> View on GitHub</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p><i class='bx  bx-envelope'></i> <a href="mailto:enokkassanda@gmail.com">enokkassanda@gmail.com</a></p>
+    <p><i class='bxl  bx-github'></i> <a href="https://github.com/Just3n0k/Coding-journey" target="_blank">https://github.com/Just3n0k/Coding-journey</a></p>
+</section>
+
+{% endblock %}
